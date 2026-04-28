@@ -1670,6 +1670,17 @@ section {
   z-index: 1;
 }
 
+.footer-credit a {
+  color: rgba(245, 239, 230, 0.5);
+  border-bottom: 1px solid rgba(245, 239, 230, 0.2);
+  padding-bottom: 1px;
+  transition: color 0.25s var(--easing), border-color 0.25s var(--easing);
+}
+.footer-credit a:hover {
+  color: var(--cream);
+  border-bottom-color: var(--cream);
+}
+
 @media (max-width: 880px) {
   .footer-top { grid-template-columns: 1fr 1fr; gap: 40px 24px; }
 }
