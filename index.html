@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Askim Tannlege — Tannklinikk i Askim sentrum</title>
+  <meta name="description" content="Askim Tannlege — en liten klinikk i Doktor Randers gate 3, midt i Askim sentrum.">
+  <meta name="theme-color" content="#1A2D47">
+
+  <meta property="og:title" content="Askim Tannlege">
+  <meta property="og:description" content="For et godt smil — gjennom hele livet.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-smile.jpg">
+
+  <link rel="icon" type="image/png" href="assets/images/logo.png?v=2">
+  <link rel="apple-touch-icon" href="assets/images/logo.png?v=2">
+  <link rel="preload" as="image" href="assets/images/hero-smile.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Askim Tannlege",
+    "image": "assets/images/logo.png?v=2",
+    "address": {"@type": "PostalAddress", "streetAddress": "Doktor Randers gate 3", "addressLocality": "Askim", "postalCode": "1830", "addressCountry": "NO"},
+    "telephone": "+47 69 88 28 38",
+    "email": "post@askimtannlege.no",
+    "url": "https://www.askimtannlege.no",
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Friday"], "opens": "08:00", "closes": "15:30"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "08:00", "closes": "20:00"}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- SVG defs (reused tooth icon) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="tooth" viewBox="0 0 100 110">
+        <path d="M50 6 C 26 6, 12 22, 12 44 C 12 62, 20 78, 28 95 C 32 104, 36 106, 40 106 C 44 106, 46 96, 47 82 C 48 73, 49 71, 50 71 C 51 71, 52 73, 53 82 C 54 96, 56 106, 60 106 C 64 106, 68 104, 72 95 C 80 78, 88 62, 88 44 C 88 22, 74 6, 50 6 Z"
+          fill="#FFFFFF" stroke="#2A9CC0" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M28 25 C 32 17, 40 13, 48 16" stroke="#FFFFFF" stroke-width="3.2" fill="none" stroke-linecap="round" opacity="0.9"/>
+        <path d="M24 36 C 26 30, 30 26, 34 24" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+      </symbol>
+      <symbol id="arr" viewBox="0 0 24 24">
+        <path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- Header -->
+  <header class="site-header transparent" data-hero-mode>
+    <div class="wrap header-row">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo.png?v=2" alt="Askim Tannlege">
+      </a>
+
+      <nav class="nav" aria-label="Hovedmeny">
+        <a href="index.html" class="active">Hjem</a>
+        <a href="tjenester.html">Tjenester</a>
+        <a href="om.html">Om oss</a>
+        <a href="info.html">Tannhelse</a>
+        <a href="kampanjer.html">Kampanjer</a>
+        <a href="hvor.html">Kontakt</a>
+        <span class="nav-divider"></span>
+        <span class="nav-cta">
+          <a href="#bestill" class="btn btn-dark">Bestill time<span class="arr"><svg><use href="#arr"/></svg></span></a>
+        </span>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Åpne meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <span class="hero-eyebrow">Askim · Doktor Randers gate 3</span>
+        <h1>Velkommen til <span class="it">Askim</span> Tannlege.</h1>
+        <p class="hero-lede">En liten klinikk i Doktor Randers gate, midt i Askim sentrum. Vi tar oss tid til den enkelte — fra første tannlegebesøk til godt voksen alder.</p>
+        <div class="hero-cta">
+          <a href="tel:+4769882838" class="btn btn-dark">
+            Ring 69 88 28 38
+            <span class="arr"><svg><use href="#arr"/></svg></span>
+          </a>
+          <a href="tjenester.html" class="btn btn-outline">Se tjenester</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-right-deco"></div>
+        <img class="hero-right-img" src="assets/images/hero-smile.jpg" alt="Et naturlig smil i ettermiddagslys">
+      </div>
+    </div>
+  </section>
+
+  <!-- Welcome -->
+  <section class="welcome">
+    <div class="wrap">
+      <div class="welcome-grid">
+        <div style="position:relative;">
+          <div class="welcome-img-deco d1"></div>
+          <div class="welcome-img-deco d2"></div>
+          <figure class="welcome-img reveal">
+            <img src="assets/images/clinic-exterior.jpg" alt="Inngangen til Askim Tannlege i Doktor Randers gate 3" loading="lazy">
+          </figure>
+        </div>
+
+        <div class="welcome-text reveal">
+          <span class="eyebrow">Velkommen</span>
+          <h2>Tannlegen i Doktor Randers gate.</h2>
+          <p>Askim Tannlege er ikke en kjede. Vi er en liten klinikk midt i sentrum, der du møter de samme folkene år etter år — fra du er liten til du blir gammel.</p>
+          <p>Vi tror på det enkle: god tid på den enkelte, ærlig kommunikasjon, og oppdatert behandling. Du blir ikke et nummer i et system.</p>
+          <a href="om.html" class="btn btn-link">
+            Bli kjent med oss
+            <span class="arr"><svg><use href="#arr"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave: cream → blue -->
+  <div class="wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,32 C240,72 480,8 720,40 C960,72 1200,16 1440,48 L1440,80 L0,80 Z" fill="#A2B4BE"/>
+    </svg>
+  </div>
+
+  <!-- Treatments -->
+  <section class="treatments" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Hva vi tilbyr</span>
+        <h2>Hele smilet — under ett tak.</h2>
+      </div>
+
+      <div class="treatments-list reveal">
+        <a class="treatment" href="tjenester.html">
+          <div class="treatment-num">i</div>
+          <div class="treatment-title">Undersøkelse &amp; rens</div>
+          <div class="treatment-desc">Grundig kontroll av tenner og tannkjøtt, og profesjonell rens for et friskere smil.</div>
+          <div class="treatment-arr"><svg><use href="#arr"/></svg></div>
+        </a>
+        <a class="treatment" href="tjenester.html">
+          <div class="treatment-num">ii</div>
+          <div class="treatment-title">Estetisk tannbehandling</div>
+          <div class="treatment-desc">Tannbleking, tannfargede fyllinger og kosmetiske løsninger som ser naturlige ut.</div>
+          <div class="treatment-arr"><svg><use href="#arr"/></svg></div>
+        </a>
+        <a class="treatment" href="tjenester.html">
+          <div class="treatment-num">iii</div>
+          <div class="treatment-title">Implantater, kroner &amp; broer</div>
+          <div class="treatment-desc">Slitesterke og diskrete løsninger for tenner som er skadet eller mangler.</div>
+          <div class="treatment-arr"><svg><use href="#arr"/></svg></div>
+        </a>
+        <a class="treatment" href="tjenester.html">
+          <div class="treatment-num">iv</div>
+          <div class="treatment-title">Rotfylling</div>
+          <div class="treatment-desc">Skånsom moderne behandling som redder tannen og fjerner smerten.</div>
+          <div class="treatment-arr"><svg><use href="#arr"/></svg></div>
+        </a>
+        <a class="treatment" href="tjenester.html">
+          <div class="treatment-num">v</div>
+          <div class="treatment-title">Akutt tannlegehjelp</div>
+          <div class="treatment-desc">Vondt? Ring oss tidlig på dagen, så finner vi en time så raskt vi kan.</div>
+          <div class="treatment-arr"><svg><use href="#arr"/></svg></div>
+        </a>
+        <a class="treatment" href="tjenester.html">
+          <div class="treatment-num">vi</div>
+          <div class="treatment-title">Barn &amp; familie</div>
+          <div class="treatment-desc">Vi tar godt vare på barn fra første tannlegebesøk — alltid en trygg opplevelse.</div>
+          <div class="treatment-arr"><svg><use href="#arr"/></svg></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave: blue → cream -->
+  <div class="wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,48 C240,8 480,72 720,40 C960,8 1200,64 1440,32 L1440,80 L0,80 Z" fill="#F2EBDD"/>
+    </svg>
+  </div>
+
+  <!-- Manifesto -->
+  <section class="manifesto" style="padding-top:0;">
+    <div class="manifesto-deco d1"></div>
+    <div class="manifesto-deco d2"></div>
+
+    <div class="wrap">
+      <div class="manifesto-grid">
+        <div class="manifesto-meta reveal">
+          <span class="eyebrow">Vår tilnærming</span>
+          <h2>Tid, omtanke og ærlighet.</h2>
+        </div>
+
+        <div class="manifesto-body reveal">
+          <p>Et tannlegebesøk kan kjennes stort. Det er ikke alltid gøy å sitte i stolen — og det er greit. Vi prøver å gjøre det så lett som mulig.</p>
+          <p>Vi forklarer hva vi gjør og hvorfor. Du får alltid <em>prisoverslag</em> før vi begynner. Vi bruker tiden vi trenger.</p>
+          <p>Det handler om å gjøre det som er riktig for deg. Hverken mer eller mindre.</p>
+
+          <div class="manifesto-sig">Teamet hos Askim Tannlege</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave: cream → blue-soft -->
+  <div class="wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,40 C300,72 600,8 900,40 C1100,64 1280,16 1440,40 L1440,80 L0,80 Z" fill="#BDD3D7"/>
+    </svg>
+  </div>
+
+  <!-- Team -->
+  <section class="team-section" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Teamet</span>
+        <h2>Mennesker bak smilet.</h2>
+      </div>
+
+      <div class="team-grid reveal">
+        <div class="member">
+          <div class="member-portrait"><img src="assets/images/team/kari.png" alt="Kari J. Ruud" loading="lazy"></div>
+          <div class="member-info">
+            <div class="member-name">Kari J. Ruud</div>
+            <div class="member-role">Tannlege · Praksiseier</div>
+          </div>
+          <p class="member-bio">Utdannet ved Odontologisk fakultet i Oslo i 1983. Lang og variert erfaring fra privat praksis.</p>
+        </div>
+        <div class="member">
+          <div class="member-portrait"><img src="assets/images/team/orjan.png" alt="Ørjan Johansen" loading="lazy"></div>
+          <div class="member-info">
+            <div class="member-name">Ørjan Johansen</div>
+            <div class="member-role">Tannlege</div>
+          </div>
+          <p class="member-bio">Utdannet ved Odontologisk fakultet i Oslo i 2004. Erfaring fra privat og offentlig praksis.</p>
+        </div>
+        <div class="member">
+          <div class="member-portrait"><img src="assets/images/team/anne-line.png" alt="Anne Line Høisæther" loading="lazy"></div>
+          <div class="member-info">
+            <div class="member-name">Anne Line Høisæther</div>
+            <div class="member-role">Tannpleier</div>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member-portrait"><img src="assets/images/team/beate.png" alt="Beate Fjerdingen" loading="lazy"></div>
+          <div class="member-info">
+            <div class="member-name">Beate Fjerdingen</div>
+            <div class="member-role">Tannhelsesekretær</div>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member-portrait"><img src="assets/images/team/trine.png" alt="Trine Finstad" loading="lazy"></div>
+          <div class="member-info">
+            <div class="member-name">Trine Finstad</div>
+            <div class="member-role">Tannhelsesekretær</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave: blue-soft → cream -->
+  <div class="wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,48 C240,8 480,72 720,40 C940,8 1200,64 1440,32 L1440,80 L0,80 Z" fill="#F2EBDD"/></svg>
+  </div>
+
+  <!-- Reviews -->
+  <section class="reviews-section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Anmeldelser · 4,5 av 5 ★ på Legelisten</span>
+        <h2>Det pasientene våre sier.</h2>
+      </div>
+
+      <div class="reviews-grid reveal">
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 av 5 stjerner">★★★★★</div>
+          <h3 class="review-title">Fantastisk tannlege</h3>
+          <p class="review-quote">«Hyggelig tannlege som tar seg tid til å forklare tilstanden på tennene, hva som bør gjøres i nær tid og hva som bør gjøres frem i tid. Behagelig vesen som gjør at man slapper av i stolen, opplever han som dyktig faglig. Bare positive opplevelser hos denne tannlegen.»</p>
+          <footer class="review-meta">
+            <strong>Ørjan Johansen</strong>
+            <span>September 2022</span>
+          </footer>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 av 5 stjerner">★★★★★</div>
+          <h3 class="review-title">Hensynsfull og dyktig</h3>
+          <p class="review-quote">«Kari er kjempeflink, effektiv og har god tid til å svare på spørsmål. Alltid hyggelig og interessert, samt tålmodig og veldig dyktig. Føler meg trygg og avslappet i stolen hos henne.»</p>
+          <footer class="review-meta">
+            <strong>Kari Jensine Ruud</strong>
+            <span>August 2022</span>
+          </footer>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 av 5 stjerner">★★★★★</div>
+          <h3 class="review-title">Trygg og dyktig</h3>
+          <p class="review-quote">«Han er lett å snakke med, og han gjør sitt ytterste for å tilrettelegge ting for pasientens beste. Svært hensynsfull og dyktig. Ros også til de andre som jobber der. Effektive og hyggelige.»</p>
+          <footer class="review-meta">
+            <strong>Ørjan Johansen</strong>
+            <span>August 2022</span>
+          </footer>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="5 av 5 stjerner">★★★★★</div>
+          <h3 class="review-title">Effektiv, dyktig, godt miljø</h3>
+          <p class="review-quote">«Jeg har hatt massiv tannlege- og sprøyteskrekk hele livet, men har nettopp gjennomført full behandling hos Kari Ruud. Helt problemfritt takket være premedisinering og en usedvanlig dyktig og rask tannlege. Staben er helt topp.»</p>
+          <footer class="review-meta">
+            <strong>Kari Jensine Ruud</strong>
+            <span>Januar 2014</span>
+          </footer>
+        </article>
+
+      </div>
+
+      <p class="reviews-source reveal">
+        Anmeldelsene er hentet fra
+        <a href="https://www.legelisten.no/klinikker/5341-askimtannlege" target="_blank" rel="noopener">
+          Legelisten.no
+          <span class="arr"><svg><use href="#arr"/></svg></span>
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Bestill time -->
+  <section class="book-section" id="bestill">
+    <div class="wrap-sm">
+      <div class="book-head reveal">
+        <span class="eyebrow">Bestilling</span>
+        <h2>Bestill time.</h2>
+        <p>Fyll ut skjemaet, så tar vi kontakt for å avtale tid. Eller ring oss direkte.</p>
+      </div>
+
+      <a href="tel:+4769882838" class="phone-card reveal">
+        <span class="phone-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <div class="phone-text">
+          <strong>Ring 69 88 28 38</strong>
+          <span>Mandag–fredag 08:00–15:30 · Torsdag til 20</span>
+        </div>
+        <span class="phone-arr"><svg><use href="#arr"/></svg></span>
+      </a>
+
+      <div class="form-divider reveal">
+        <span>Eller send en melding</span>
+      </div>
+
+      <form class="book-form reveal" data-mailto="post@askimtannlege.no">
+        <div class="form-row">
+          <label class="form-field">
+            <span>Navn</span>
+            <input type="text" name="navn" placeholder="Ditt fulle navn" required>
+          </label>
+          <label class="form-field">
+            <span>Telefon</span>
+            <input type="tel" name="telefon" placeholder="Ditt telefonnummer" required>
+          </label>
+        </div>
+
+        <label class="form-field">
+          <span>E-post</span>
+          <input type="email" name="epost" placeholder="din@epost.no">
+        </label>
+
+        <label class="form-field">
+          <span>Type henvendelse</span>
+          <select name="type" required>
+            <option value="" disabled selected>Velg type henvendelse</option>
+            <option value="Rutinekontroll">Rutinekontroll</option>
+            <option value="Tannrens">Tannrens</option>
+            <option value="Akutt tannlegehjelp">Akutt tannlegehjelp</option>
+            <option value="Tannbleking / estetikk">Tannbleking / estetikk</option>
+            <option value="Implantater, kroner og broer">Implantater, kroner og broer</option>
+            <option value="Rotfylling">Rotfylling</option>
+            <option value="Ny pasient">Ny pasient</option>
+            <option value="Annet">Annet</option>
+          </select>
+        </label>
+
+        <label class="form-field">
+          <span>Melding</span>
+          <textarea name="melding" rows="5" placeholder="Beskriv kort hva henvendelsen gjelder..."></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-dark btn-submit">
+          Send melding
+          <span class="arr"><svg><use href="#arr"/></svg></span>
+        </button>
+
+        <p class="form-note">Vi svarer så raskt vi kan i åpningstid.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="map-section">
+    <div class="wrap">
+      <div class="map-block reveal">
+        <div class="map-info">
+          <span class="eyebrow">Slik finner du oss</span>
+          <h3>Doktor Randers gate 3,<br>midt i Askim sentrum.</h3>
+
+          <dl>
+            <div class="map-info-row"><dt>Telefon</dt><dd><a href="tel:+4769882838">69 88 28 38</a><span class="small">Faks: 69 88 59 93</span></dd></div>
+            <div class="map-info-row"><dt>E-post</dt><dd><a href="mailto:post@askimtannlege.no">post@askimtannlege.no</a></dd></div>
+            <div class="map-info-row"><dt>Adresse</dt><dd>Doktor Randers gate 3<span class="small">1830 Askim</span></dd></div>
+            <div class="map-info-row"><dt>Åpent</dt><dd>Man – fre 08:00 – 15:30<span class="small">Torsdag 08–20 · Etter avtale</span></dd></div>
+          </dl>
+        </div>
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=Doktor+Randers+gate+3,+1830+Askim&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Kart til Askim Tannlege"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave: blue-soft → navy -->
+  <div class="wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,40 C320,8 640,72 960,40 C1180,16 1320,56 1440,32 L1440,80 L0,80 Z" fill="#1A2D47"/>
+    </svg>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/images/logo.png?v=2" alt="Askim Tannlege">
+          </div>
+          <p class="footer-tag">Tannklinikken i nabolaget — midt i Askim sentrum.</p>
+        </div>
+        <div>
+          <h4>Sider</h4>
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="tjenester.html">Tjenester</a></li>
+            <li><a href="om.html">Om oss</a></li>
+            <li><a href="info.html">Tannhelse</a></li>
+            <li><a href="kampanjer.html">Kampanjer</a></li>
+            <li><a href="hvor.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tjenester</h4>
+          <ul>
+            <li><a href="tjenester.html">Undersøkelse</a></li>
+            <li><a href="tjenester.html">Tannbleking</a></li>
+            <li><a href="tjenester.html">Implantater</a></li>
+            <li><a href="tjenester.html">Rotfylling</a></li>
+            <li><a href="tjenester.html">Akutt hjelp</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <div class="footer-contact">
+            <a href="tel:+4769882838">69 88 28 38</a><br>
+            <a href="mailto:post@askimtannlege.no">post@askimtannlege.no</a><br><br>
+            Doktor Randers gate 3<br>
+            1830 Askim
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© <span id="year"></span> Askim Tannlege</div>
+        <div>Personvern · Cookies</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
